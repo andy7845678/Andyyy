@@ -1,0 +1,63 @@
+{
+  "profiles": {
+    "Andyyy": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7223;http://localhost:5064"
+    },
+    "Andyyy-Staging": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/worksheets",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Staging",
+        "ASPNETCORE_DETAILEDERRORS": "1",
+        "ASPNETCORE_SHUTDOWNTIMEOUTSECONDS": "3"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7223;http://localhost:5064"
+    },
+    "Andyyy-Production": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/worksheets",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7223;http://localhost:5064"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/worksheets",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_URLS": "https://+:443;http://+:80"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:51052",
+      "sslPort": 44370
+    }
+  }
+}
